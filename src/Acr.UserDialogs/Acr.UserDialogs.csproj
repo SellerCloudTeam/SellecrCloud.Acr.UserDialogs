@@ -29,7 +29,11 @@
         <DebugSymbols>true</DebugSymbols>
       <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     </PropertyGroup>
-
+    
+    <PropertyGroup>
+      <DesignTimeBuild>false</DesignTimeBuild>
+    </PropertyGroup>
+    
     <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
         <DebugType>portable</DebugType>
         <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
