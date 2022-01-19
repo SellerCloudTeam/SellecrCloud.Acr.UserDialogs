@@ -2,7 +2,7 @@
 
     <PropertyGroup>
         <TargetFrameworks>netstandard2.0;MonoAndroid81;MonoAndroid90;Xamarin.iOS10</TargetFrameworks>
-        <TargetFrameworks Condition=" '$(OS)' == 'Windows_NT' ">$(TargetFrameworks);uap10.0.16299</TargetFrameworks>
+        <TargetFrameworks Condition=" '$(OS)' == 'Windows_NT' ">$(TargetFrameworks);uap10.0.17763</TargetFrameworks>
         <PackageProjectUrl>https://github.com/aritchie/userdialogs</PackageProjectUrl>
         <Product>$(AssemblyName) ($(TargetFramework))</Product>
         <Authors>Allan Ritchie</Authors>
@@ -43,8 +43,8 @@
     </PropertyGroup>
 
     <PropertyGroup Condition=" $(TargetFramework.StartsWith('uap')) ">
-        <TargetPlatformVersion>10.0.16299.0</TargetPlatformVersion>
-        <TargetPlatformMinVersion>10.0.16299.0</TargetPlatformMinVersion>
+        <TargetPlatformVersion>10.0.17763.0</TargetPlatformVersion>
+        <TargetPlatformMinVersion>10.0.17763.0</TargetPlatformMinVersion>
     </PropertyGroup>
 
     <ItemGroup Condition=" '$(Configuration)' == 'Release' AND '$(OS)' == 'Windows_NT' ">
